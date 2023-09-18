@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+     </head>
+    <body>
+        <table border="0" width="100%">
+            <tbody>
+            <td style ="vertical-align:top;">
+                <ul>
+                    <li><a href="../account.html">Account</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Studio</a></li>
+                    <li><a href="#">Commons</a></li>
+                    <li><a href="#">Help</a></li>
+                 </ul>
+            </td>
+            <td style ="vertical-align:top;">
+                <ul>
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="#">Modules</a></li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li><a href="assignments.html">Assignments</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="../grades.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Video</a></li>
+                    <li><a href="#">Discussions</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubrics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="#">Settings</a></li>
+                 </ul>
+            </td>
+            <td>
+                <select id="grader-dropdown">
+                    <option value="speed-grader">SpeedGrader</option> </select>
+                <h2>Assignment Name</h2>
+                <input type="assignment-name"
+                             placeholder="Name"
+                             id="assignment-name"/> <br> <br>
+                <h4>Assignment Description</h4>
+                <form id="textarea">
+<textarea cols="30" rows="10"> </textarea>
+</form>
+                <h4>Points</h4>
+                <input type="assignment-points"
+                             placeholder="Points"
+                             id="assignment-points"/> <br>
+                <h4>Assignment Group</h4>
+                <select id="assignment-type-dropdown">
+                    <option value="assignments">Assignments</option>
+                    <option value="Quizzes">Quizzes</option>
+                    <option value="Exams">Exams</option>
+                    <option value="Projects">Projects</option> </select>
+                <h4>Display Grade As</h4>
+                <select id="assignment-grade-dropdown">
+                    <option value="percent">Percentage</option>
+                    <option value="Points">Points</option> </select>
+                    <h4>Submission Type</h4>
+                    <select id="assignment-submission-dropdown">
+                        <option value="percent">Online</option>
+                        <option value="Points">Gradescope</option> </select>
+                        <h4>Online Entry Options</h4>
+                        <input type="checkbox" value="Text entry"
+                        name="check-type" id="chkbox-entry" />
+                  <label for="chkbox-comedy">Text Entry</label>    <br/>
+                  <input type="checkbox" value="url"
+                        name="check-type" id="chkbox-url"/>
+                  <label for="chkbox-url">Website URL</label>    <br/>
+                  <input type="checkbox" value="recordings"
+                        name="check-type" id="chkbox-recordings" />
+                  <label for="chkbox-media">Media Recordings</label> <br/>
+                  <input type="checkbox" value="annotations"
+                        name="check-type" id="chkbox-annotations"/>
+                  <label for="chkbox-annotations">Student Annotations</label> <br>
+                  <input type="checkbox" value="file"
+                        name="check-type" id="chkbox-file"/>
+                  <label for="chkbox-file">File Upload</label>
+                  <h4>Submission Attempts</h4>
+                  <select id="assignment-submission-time-dropdown">
+                    <option value="infinite">Unlimited</option> </select>
+                <h4>Plagiarism Review</h4>
+                  <select id="assignment-plagiarism-dropdown">
+                    <option value="infinite">None</option> </select>
+                <h4>Group Assignment</h4>
+                <input type="checkbox" value="Group Assignment"
+                name="check-type" id="chkbox-entry" />
+          <label for="chkbox-group">This is a Group Assignment</label>
+                <h4>Peer Review</h4>
+                <input type="checkbox" value="Peer review"
+                name="check-type" id="chkbox-entry" />
+        <label for="chkbox-group">Requires Peer Review</label> 
+                <h4>Assign</h4>
+                <h4>Assign To</h4>
+                <input type="assignment-assign"
+                             placeholder="Everyone"
+                             id="assignment-assign"/>
+                <h4>Due</h4>
+                <input type="date"
+      id="text-fields-dob"
+      value="2000-01-21"/>
+                <h4>Available From</h4>
+                <input type="date"
+      id="text-fields-dob"
+      value="2000-01-21"/>
+                <h4>Until</h4>
+                <input type="date"
+      id="text-fields-dob"
+      value="2000-01-21"/> <br>
+      <button><a href="assignments.html">Cancel</a></button> <button><a href="assignments.html">Save</a></button>
+            </td>
+        
