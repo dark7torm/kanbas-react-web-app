@@ -2,38 +2,44 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link href="index.css" rel="stylesheet"/>
+        <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+        <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
         <title>Home</title>
      </head>
      <body>
-        <table border="0" width="100%">
+        <div class="wd-sidebar">
+            <ul class="dashboard-ul">
+                <li><a href="home.html" class="nav-link"><img src="../images/neu.png" width="75" height="25" class="center"/></a></li>
+                <li><a href="account.html"class="nav-link">
+                    <button class="sidebar-button"><i class="fa fa-user" style="color:white"></i>
+                    <span class ="sidebar-information">Account</span></a></button></li>
+                <li><a href="#"class="nav-link"><button class="sidebar-button"><i class="fa fa-tachometer-alt" style="color:red"></i><span class ="sidebar-information">Dashboard</span></a></button></li>
+                <li><a href="#"class="nav-link"><button class="sidebar-button"><i class="fa fa-book" style="color:red"></i><span class ="sidebar-information">Courses</span></a></button></li>
+                <li><a href="#"class="nav-link"><button class="sidebar-button"><i class="fa fa-calendar-week" style="color:red"></i><span class ="sidebar-information">Calendar</span></a></button></li>
+                <li><a href="#"class="nav-link"><button class="sidebar-button"><i class="fa fa-mail-bulk" style="color:red"></i><span class ="sidebar-information">Inbox</span></a></button></li>
+                <li><a href="#"class="nav-link"><button class="sidebar-button"><i class="fa fa-clock" style="color:red"></i><span class ="sidebar-information">History</span></a></button></li>
+                <li><a href="#"class="nav-link"><button class="sidebar-button"><i class="fa fa-video" style="color:red"></i><span class ="sidebar-information">Studio</span></a></button></li>
+                <li><a href="#"class="nav-link"><button class="sidebar-button"><i class="fa fa-arrow-circle-right" style="color:red"></i><span class ="sidebar-information">Commons</span></a></button></li>
+                <li><a href="#"class="nav-link"><button class="sidebar-button"><i class="fa fa-question-circle" style="color:red"></i><span class ="sidebar-information">Help</span></a></button></li>
+             </ul>
+        </div>
+        <div class="kwa-profile-dashboard">
+            <ul>
+                <li><a href="#"class="nav-link">Notifications</a></li>
+                <li><a href="profile/index.html"class="nav-link">Profile</a></li>
+                <li><a href="#"class="nav-link">Files</a></li>
+                <li><a href="#"class="nav-link">Settings</a></li>
+                <li><a href="#"class="nav-link">ePortfolios</a></li>
+                <li><a href="#"class="nav-link">Shared Content</a></li>
+                <li><a href="#"class="nav-link">The Hub</a></li>
+                <li><a href="#"class="nav-link">Qwickly Course Tools</a></li>
+                <li><a href="#"class="nav-link">Global Announcements</a></li>
+             </ul>
+        </div>
+        <table border="0" width="80%" class="kwa-profile-dashboard-table">
             <tbody>
-                <td style = "vertical-align:top;">
-                    <ul>
-                        <li><a href="account.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                     </ul>
-                </td>
-                <td style = "vertical-align:top;">
-                    <ul>
-                        <li><a href="#">Notifications</a></li>
-                        <li><a href="profile/index.html">Profile</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">ePortfolios</a></li>
-                        <li><a href="#">Shared Content</a></li>
-                        <li><a href="#">The Hub</a></li>
-                        <li><a href="#">Qwickly Course Tools</a></li>
-                        <li><a href="#">Global Announcements</a></li>
-                     </ul>
-                </td>
-                <td style = "vertical-align:top;">
+                <td style = "vertical-align:right;">
                     <ul>
                         <li><a href="home.html">Home</a></li>
                         <li><a href="#">Modules</a></li>

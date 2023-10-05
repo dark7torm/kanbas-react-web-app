@@ -2,122 +2,167 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link href="../index.css" rel="stylesheet"/>
+        <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+        <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
         <title>Home</title>
      </head>
-    <body>
-        <table border="0" width="100%">
-            <tbody>
-            <td style ="vertical-align:top;">
-                <ul>
-                    <li><a href="../account.html">Account</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                 </ul>
-            </td>
-            <td style ="vertical-align:top;">
-                <ul>
-                    <li><a href="../home.html">Home</a></li>
-                    <li><a href="#">Modules</a></li>
-                    <li><a href="#">Piazza</a></li>
-                    <li><a href="#">Zoom Meetings</a></li>
-                    <li><a href="assignments.html">Assignments</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="../grades.html">Grades</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Panopto Video</a></li>
-                    <li><a href="#">Discussions</a></li>
-                    <li><a href="#">Announcements</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Rubrics</a></li>
-                    <li><a href="#">Outcomes</a></li>
-                    <li><a href="#">Collaborations</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="#">Settings</a></li>
-                 </ul>
-            </td>
-            <td>
-                <select id="grader-dropdown">
-                    <option value="speed-grader">SpeedGrader</option> </select>
-                <h2>Assignment Name</h2>
-                <input type="assignment-name"
-                             placeholder="Name"
-                             id="assignment-name"/> <br> <br>
-                <h4>Assignment Description</h4>
-                <form id="textarea">
-<textarea cols="30" rows="10"> </textarea>
-</form>
-                <h4>Points</h4>
-                <input type="assignment-points"
-                             placeholder="Points"
-                             id="assignment-points"/> <br>
-                <h4>Assignment Group</h4>
-                <select id="assignment-type-dropdown">
-                    <option value="assignments">Assignments</option>
-                    <option value="Quizzes">Quizzes</option>
-                    <option value="Exams">Exams</option>
-                    <option value="Projects">Projects</option> </select>
-                <h4>Display Grade As</h4>
-                <select id="assignment-grade-dropdown">
-                    <option value="percent">Percentage</option>
-                    <option value="Points">Points</option> </select>
-                    <h4>Submission Type</h4>
-                    <select id="assignment-submission-dropdown">
-                        <option value="percent">Online</option>
-                        <option value="Points">Gradescope</option> </select>
-                        <h4>Online Entry Options</h4>
-                        <input type="checkbox" value="Text entry"
-                        name="check-type" id="chkbox-entry" />
-                  <label for="chkbox-comedy">Text Entry</label>    <br/>
-                  <input type="checkbox" value="url"
-                        name="check-type" id="chkbox-url"/>
-                  <label for="chkbox-url">Website URL</label>    <br/>
-                  <input type="checkbox" value="recordings"
-                        name="check-type" id="chkbox-recordings" />
-                  <label for="chkbox-media">Media Recordings</label> <br/>
-                  <input type="checkbox" value="annotations"
-                        name="check-type" id="chkbox-annotations"/>
-                  <label for="chkbox-annotations">Student Annotations</label> <br>
-                  <input type="checkbox" value="file"
-                        name="check-type" id="chkbox-file"/>
-                  <label for="chkbox-file">File Upload</label>
-                  <h4>Submission Attempts</h4>
-                  <select id="assignment-submission-time-dropdown">
-                    <option value="infinite">Unlimited</option> </select>
-                <h4>Plagiarism Review</h4>
-                  <select id="assignment-plagiarism-dropdown">
-                    <option value="infinite">None</option> </select>
-                <h4>Group Assignment</h4>
-                <input type="checkbox" value="Group Assignment"
-                name="check-type" id="chkbox-entry" />
-          <label for="chkbox-group">This is a Group Assignment</label>
-                <h4>Peer Review</h4>
-                <input type="checkbox" value="Peer review"
-                name="check-type" id="chkbox-entry" />
-        <label for="chkbox-group">Requires Peer Review</label> 
-                <h4>Assign</h4>
-                <h4>Assign To</h4>
-                <input type="assignment-assign"
-                             placeholder="Everyone"
-                             id="assignment-assign"/>
-                <h4>Due</h4>
-                <input type="date"
-      id="text-fields-dob"
-      value="2000-01-21"/>
-                <h4>Available From</h4>
-                <input type="date"
-      id="text-fields-dob"
-      value="2000-01-21"/>
-                <h4>Until</h4>
-                <input type="date"
-      id="text-fields-dob"
-      value="2000-01-21"/> <br>
-      <button><a href="assignments.html">Cancel</a></button> <button><a href="assignments.html">Save</a></button>
-            </td>
-        
+     <body>
+        <div class="wd-sidebar">
+            <ul class="dashboard-ul">
+                <li><a href="../home.html" class="nav-link"><img src="../../images/neu.png" width="75" height="25" class="center"/></a></li>
+                <li><a href="../profile/index.html"class="nav-link">
+                    <button class="sidebar-button"><i class="fa fa-user" style="color:white"></i>
+                    <span class ="sidebar-information">Account</span></a></button></li>
+                <li><a href="../dashboard.html"class="nav-link"><button class="sidebar-button"><i class="fa fa-tachometer-alt" style="color:red"></i><span class ="sidebar-information">Dashboard</span></a></button></li>
+                <li><a href="#"class="nav-link"><button class="sidebar-button-selected"><i class="fa fa-book" style="color:red"></i><span class ="sidebar-information-selected">Courses</span></a></button></li>
+                <li><a href="#"class="nav-link"><button class="sidebar-button"><i class="fa fa-calendar-week" style="color:red"></i><span class ="sidebar-information">Calendar</span></a></button></li>
+                <li><a href="#"class="nav-link"><button class="sidebar-button"><i class="fa fa-mail-bulk" style="color:red"></i><span class ="sidebar-information">Inbox</span></a></button></li>
+                <li><a href="#"class="nav-link"><button class="sidebar-button"><i class="fa fa-clock" style="color:red"></i><span class ="sidebar-information">History</span></a></button></li>
+                <li><a href="#"class="nav-link"><button class="sidebar-button"><i class="fa fa-video" style="color:red"></i><span class ="sidebar-information">Studio</span></a></button></li>
+                <li><a href="#"class="nav-link"><button class="sidebar-button"><i class="fa fa-arrow-circle-right" style="color:red"></i><span class ="sidebar-information">Commons</span></a></button></li>
+                <li><a href="#"class="nav-link"><button class="sidebar-button"><i class="fa fa-question-circle" style="color:red"></i><span class ="sidebar-information">Help</span></a></button></li>
+             </ul>
+        </div>
+        <div>
+        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#" class="breadcrumb-text">CS4550</a></li>
+            <li class="breadcrumb-item"><a href="#" class="breadcrumb-text">Spring</a></li>
+            <li class="breadcrumb-item"><a href="#" class="breadcrumb-text">7</a></li>
+            <li class="breadcrumb-item"><a href="#" class="breadcrumb-symbol">></a></li>
+            <li class="breadcrumb-item"><a href="#" class="breadcrumb-text">Assignments</a></li>
+            <li class="breadcrumb-item"><a href="#" class="breadcrumb-symbol">></a></li>
+            <li class="breadcrumb-item active" aria-current="page">A1-HTML</li>
+        </ol>
+    </nav>
+    </div>
+        <div class="kwa-profile-dashboard">
+            <ul>
+                <li><a href="home.html"class="nav-link">Home</a></li>
+                <li><a href="../profile/index.html"class="nav-link">Modules</a></li>
+                <li><a href="#"class="nav-link">Piazza</a></li>
+                <li><a href="#"class="nav-link">Zoom Meetings</a></li>
+                <li><a href="assignments.html"class="kwa-selected-link">Assignments</a></li>
+                <li><a href="#"class="nav-link">Quizzes</a></li>
+                <li><a href="../grades.html"class="nav-link">Grades</a></li>
+                <li><a href="#"class="nav-link">People</a></li>
+                <li><a href="#"class="nav-link">Panopto Video</a></li>
+                <li><a href="#"class="nav-link">Discussions</a></li>
+                <li><a href="#"class="nav-link">Announcements</a></li>
+                <li><a href="#"class="nav-link">Pages</a></li>
+                <li><a href="#"class="nav-link">Files</a></li>
+                <li><a href="#"class="nav-link">Rubrics</a></li>
+                <li><a href="#"class="nav-link">Outcomes</a></li>
+                <li><a href="#"class="nav-link">Collaborations</a></li>
+                <li><a href="#"class="nav-link">Syllabus</a></li>
+                <li><a href="#"class="nav-link">Settings</a></li>
+             </ul>
+        </div>
+    </div>
+    
+    <hr class="horizontal-rule">
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="float-start">
+                <button class="btn btn-light float-end"><i class="fa fa-ellipsis-v" style="color:black"></i></button>
+                <button class="btn btn-light float-end"> <span class="checkmark float-end"><i class="fa fa-check-circle"></i> Published</span></button>   
+            </div>
+            <div class="col-md-6 offset-md-3">
+                <label for="name-edit" >Assignment Name</label>
+                <input type="search" class="form-control float-end" id="name-edit" value="A1 - ENV + HTML">
+                <div class="col-sm-15">
+                    <textarea class="form-control"
+                              id="textarea1"
+                              rows="5">First assignment, going over basics on how to create a user interface using HTML</textarea>
+                </div>
+            </div>
+            <div class="form-group col-md-6 offset-md-3">
+                <label for="points">Points</label>
+                <input type="text" class="form-control" id="points">
+            </div>
+            <div class="form-group col-md-6 offset-md-3">
+                <label for="assignmentGroup">Assignment Group</label>
+                <select class="form-select" id="assignmentGroup">
+                    <option></option>
+                 </select>
+            </div>
+            <div class="form-group col-md-6 offset-md-3">
+                <label for="assignmentGroup">Display Grade as</label>
+                <select class="form-select" id="assignmentGroup">
+                    <option></option>
+                 </select>
+            </div>
+            <div class="form-check col-md-6 offset-md-3">
+                <input class="form-check-input"
+                       type="checkbox" id="r6"/>
+                  <label class="form-check-label" for="r6">
+                    Do not count this assignment towards final grade</label>
+              </div>
+              <div class="container mt-4 col-md-6 offset-md-3">
+                <label for="container-box" >Submission Type</label>
+                <div class="container-box" id ="submission-type">
+                    <select class="form-select" id="assignmentGroup">
+                        <option>Online</option>
+                     </select>
+                     <input class="form-check-input"
+                     type="checkbox" id="r6" checked/>
+                <label class="form-check-label" for="r6">
+                  Text Entry</label>
+                  <br>
+                  <input class="form-check-input"
+                       type="checkbox" id="r6" checked/>
+                  <label class="form-check-label" for="r6">
+                    Website URL</label>
+                    <br>
+                    <input class="form-check-input"
+                    type="checkbox" id="r6" checked/>
+               <label class="form-check-label" for="r6">
+                 Media Recordings</label>
+                 <br>
+                 <input class="form-check-input"
+                       type="checkbox" id="r6"/>
+                  <label class="form-check-label" for="r6">
+                    Student Annotation</label>
+                    <br>
+                    <input class="form-check-input"
+                       type="checkbox" id="r6"/>
+                  <label class="form-check-label" for="r6">
+                    File Uploads</label>
+                </div>
+            </div>
+            <div class="container mt-5 col-md-6 offset-md-3">
+                <label for="container-box" >Assign</label>
+                    <div class="form-group col-md-6 offset-md-3">
+                        <label for="assign-to">Assign to</label>
+                        <input type="text" class="form-control" id="assign-to" size="4">
+                        <div class="input-group">
+                            <label class="input-group-text" for="end-date">Due</label>
+                            <input type="date" class="form-control" id="end-date" value="2023-09-18">
+                            
+                        </div>
+                         <div class="input-group">
+                            <label class="input-group-text" for="end-date">Available From</label>
+                            <input type="date" class="form-control" id="end-date" value="2023-09-11">
+                            
+                        </div>
+                        <div class="input-group">
+                            <label class="input-group-text" for="end-date">Until</label>
+                            <input type="date" class="form-control" id="end-date" value="2023-09-18">
+                            
+                        </div>
+                    </div>
+        </div>
+        <div class="container mt-5 col-md-6 offset-md-3">
+            <input class="form-check-input"
+                       type="checkbox" id="r6"/>
+                  <label class="form-check-label" for="r6">
+                    Notify users that this content has been changed</label>
+        </div>
+        <div class="float-end">
+            <button class="btn btn-danger float-end"><a href="assignments.html" class="button-text-2" >Save</a></button>
+            <button class="btn btn-light float-end"> <span class="float-end"> <a href="assignments.html"class="button-text">Cancel</a></span></button>   
+        </div>
+    </div>
+       

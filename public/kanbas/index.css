@@ -1,0 +1,285 @@
+.wd-fg-color-red { color: #ff7070; }
+p#sidebar {
+    background-color: red;
+    color: white;
+}
+.wd-sidebar {
+    vertical-align: top;
+    background-color: black;
+    width:85px;
+    position:fixed;
+    right: 95%;
+    text-align: center;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-wrap:normal;
+    padding-top: 0px;
+}
+
+.sidebar-button {
+    border:black;
+    align-self: left;
+    vertical-align: top;
+    margin: 0px;
+    width: 100px;
+    height: 75px;
+    text-align: center;
+    font: size 10px;
+    font-family:sans-serif;
+}
+.sidebar-information {
+    vertical-align: top;
+    color:white;
+    text-align: center;
+    font-size: 75%
+}
+.sidebar-td{
+    color: red;
+    background-color: white;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+a.nav-link:link
+{
+   color: red;
+   text-decoration: none;
+   display: inline-block;
+}
+a.nav-link:visited
+{
+   color: red;
+   text-decoration: none;
+}
+a.nav-link:hover
+{
+   color: red;
+   text-decoration: none;
+}
+a.nav-link:active
+{
+   color: red;
+   background-color: white;
+   text-decoration: none;
+}
+.dashboard-ul{
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    background-position:100%;
+    line-height: 15px;
+    padding: 0;
+    list-style: none;
+    display:flex;
+    flex-direction:column;
+    width: 75px;
+    
+}
+button{
+    outline:none;
+    color:red;
+    background-color: black;
+    text-align: center;
+    
+}
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  ul, li{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+  }
+  .dashboard-table {
+    width: 100%;
+    margin-left: 10%;
+}
+table.menu {
+    width: auto;
+    margin-right: 0px;
+    margin-left: auto;
+}
+.kwa-profile-dashboard{
+    vertical-align: top;
+    width: 190 px;
+    position:absolute;
+    right: 80%;
+    text-align: top;
+    height: 100%;
+    padding-top: 30px;
+    overflow-wrap:break-word;
+}
+.kwa-selected-link{
+    color:black;
+    border-left: black;
+    border-left-style:solid;
+    text-decoration: none;
+    border-left-width: 2px;
+    padding-left:10px;
+}
+.kwa-profile-dashboard-table{
+    width:50%;
+    margin-left:30%;
+    overflow-wrap:break-word;
+}
+* {
+    font: size 10px;
+    font-family:sans-serif;
+}
+.edit-button {
+    background-color:gray;
+    vertical-align: center;
+    text-align:center;
+    width:130px;
+    height:30px;
+}
+.edit-button-text{
+    font-size: 90%;
+    vertical-align: center;
+    text-align:center;
+    color:black;
+}
+.wd-pos-absolute-10-10 {
+    position: absolute;
+    top: 10px;
+    left: 1300px;
+ }
+
+ .wd-pos-absolute-right {
+    position: absolute;
+    top: 910px;
+    left: 800px;
+ }
+ .wd-pos-absolute-right-2 {
+    position: absolute;
+    top: 910px;
+    left: 880px;
+ }
+ 
+ a.settings-link
+ {
+    color: red;
+    text-decoration: none;
+    display: inline-block;
+ }
+ .cancel-edit-button-text{
+    font-size:40%;
+    vertical-align: top;
+    text-align:center;
+    color:black;
+}
+.button-text{
+    text-decoration:none;
+    color:black;
+
+}
+.button-text-2{
+    text-decoration:none;
+    color:white;
+    
+}
+.sidebar-button-selected{
+    background-color:white;
+    align-self: left;
+    vertical-align: top;
+    margin: 0px;
+    width: 100px;
+    height: 75px;
+    text-align: center;
+    font: size 10px;
+    font-family:sans-serif;
+}
+.sidebar-information-selected {
+    vertical-align: top;
+    color:red;
+    text-align: center;
+    font-size: 75%
+}
+.page-title{
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    color:black;
+    font-size:x-large;
+    
+}
+.page-subtitle{
+    position: absolute;
+    top: 60px;
+    left: 130px;
+    color:black;
+    font-size:large;
+    
+}
+.horizontal-rule{
+    position: relative;
+    top: 40px;
+    border: none;
+    height: 12px;
+    background: black;
+    margin-bottom: 50px;
+}
+.course-card {
+    min-width: 250px;
+    max-width: 270px;
+    margin: 50px 50px 50px 0; 
+}
+.card-link{
+    color:blue;
+    text-decoration:none;
+}
+.breadcrumb-nav {
+    margin: 5px 0 0 100px; 
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.breadcrumb-text{
+    color:red;
+    text-decoration:none;
+}
+.breadcrumb-symbol{
+    color:gray;
+    text-decoration:none;
+}
+.checkmark {
+    color: green;
+}
+.custom-list-group {
+    max-width: 1500px;
+}
+.list-group-location{
+    margin-left:auto;
+}
+.list-group-item-icon{
+    color:green;
+}
+.edit-div{
+    width: 1500px;
+}
+#submission-type
+{
+    height:200px;
+    font-size:14pt;
+}
+.container-box {
+    border: 1px solid #ccc; /* Border for the container */
+    padding: 20px; /* Padding inside the container */
+    width: 300px; /* Width of the container */
+}
+.container-box-2 {
+    border: 1px solid #ccc; /* Border for the container */
+    padding: 20px; /* Padding inside the container */
+    width: 500px; /* Width of the container */
+    height:500px;
+}
