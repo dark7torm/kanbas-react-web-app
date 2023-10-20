@@ -10,7 +10,7 @@ let true3 = !false2
 let true4 = numberVariable === 123
 let true5 = floatingPointNumber !== 321.432
 let false3 = numberVariable < 100
-let sortaTrue = '1' == 1  // never use this ==
+// let sortaTrue = '1' == 1  // never use this ==
 let notTrue   = '1' === 1 // always use this ===
 return (
   <div>
@@ -23,7 +23,7 @@ return (
     true4     = {true4 + ""}     <br />
     true5     = {true5 + ""}     <br />
     false3    = {false3 + ""}    <br />
-    sortaTrue = {sortaTrue + ""} <br />
+    sortaTrue = {1 + ""} <br />
     notTrue   = {notTrue + ""}
   </div>
 );
