@@ -17,6 +17,7 @@ p#sidebar {
     overflow-x: hidden;
     overflow-wrap:normal;
     padding-top: 0px;
+    text-decoration:none;
 }
 
 .sidebar-button {
