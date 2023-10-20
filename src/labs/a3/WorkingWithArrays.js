@@ -6,6 +6,7 @@ import JsonStringify from "./JsonStringify";
 import FindFunction from "./FindFunction";
 import FindIndex from "./FindIndex";
 import FilterFunction from "./FilterFunction";
+import React from "react";
 function WorkingWithArrays() {
     var functionScoped = 2;
     let blockScoped = 5;
