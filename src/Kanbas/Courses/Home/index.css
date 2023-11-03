@@ -1,0 +1,5 @@
+.not-fixed {
+    position: relative; /* Set the position to relative */
+    top: auto; /* Reset the top property */
+    /* Other styling properties can be added as needed */
+  }

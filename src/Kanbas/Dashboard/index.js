@@ -3,39 +3,16 @@ import db from "../Database";
 import "./index.css";
 import { React, useState } from "react";
 
-function Dashboard() {
-  const [courses, setCourses] = useState(db.courses);
-  const [course, setCourse] = useState({
-    name: "New Course",
-    number: "New Number",
-    startDate: "2023-09-10",
-    endDate: "2023-12-15",
-  });
-  const deleteCourse = (courseId) => {
-    setCourses(courses.filter((course) => course._id !== courseId));
-  };
-
-  const addNewCourse = () => {
-    setCourses([...courses, { ...course, _id: new Date().getTime() }]);
-  };
-  const updateCourse = () => {
-    setCourses(
-      courses.map((c) => {
-        if (c._id === course._id) {
-          return course;
-        } else {
-          return c;
-        }
-      })
-    );
-  };
-
+function Dashboard(
+  { courses, course, setCourse, addNewCourse,
+  deleteCourse, updateCourse } 
+  ) {
   return (
     <div>
       <h1>Dashboard</h1>
-      <button onClick={updateCourse}>Update</button>
-
-      <button onClick={addNewCourse}>Add</button>
+      <button class="green-button" onClick={addNewCourse}>Add</button>
+      <div class="divider"></div>
+      <button class="blue-button" onClick={updateCourse}>Update</button>
       <h5>Course</h5>
       <input
         value={course.name}
@@ -67,16 +44,7 @@ function Dashboard() {
             to={`/Kanbas/Courses/${course._id}`}
             className="list-group-item"
           >
-            <button
-              onClick={(event) => {
-                event.preventDefault();
-                deleteCourse(course._id);
-              }}
-            >
-              Delete
-            </button>
-
-            <button
+            <button class = "yellow-button"
               onClick={(event) => {
                 event.preventDefault();
                 setCourse(course);
@@ -84,6 +52,18 @@ function Dashboard() {
             >
               Edit
             </button>
+            <div class="divider"></div>
+            <button class="red-button"
+              onClick={(event) => {
+                event.preventDefault();
+                deleteCourse(course._id);
+              }}
+            >
+              Delete
+            </button>
+            <div class="divider"></div>
+
+            
 
             {course.name}
           </Link>
