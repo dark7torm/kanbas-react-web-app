@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import React from "react";
 function Add() {
   const { a, b } = useParams();
   return (
