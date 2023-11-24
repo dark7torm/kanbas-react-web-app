@@ -1,18 +1,31 @@
-import { Link } from "react-router-dom";
 import db from "../Database";
 import "./index.css";
-import { React, useState } from "react";
-
-function Dashboard(
-  { courses, course, setCourse, addNewCourse,
-  deleteCourse, updateCourse } 
-  ) {
+import { Link } from "react-router-dom";
+import { useState } from "react";
+function Dashboard({
+  addCourse,
+  deleteCourse,
+  updateCourse,
+  courses,
+  course,
+  setCourse,
+  setCourses,
+}) {
+  const colorPaths = ["backgrounds/green.png", "backgrounds/neu.png", "backgrounds/orange.png",
+  "backgrounds/red.png", "backgrounds/black.png", "backgrounds/blue.png"];
   return (
-    <div>
+    <div className = "wd-dashboard-content">
       <h1>Dashboard</h1>
-      <button class="green-button" onClick={addNewCourse}>Add</button>
-      <div class="divider"></div>
-      <button class="blue-button" onClick={updateCourse}>Update</button>
+      <input
+        type="text"
+        value={course.name}
+        onChange={(e) => {
+          setCourse({ ...course, name: e.target.value });
+        }}
+      />
+      <button className ="blue-button" onClick={() => updateCourse(course)}>Update</button>
+      <button className = "green-button" onClick={addCourse}>Add</button>
+
       <h5>Course</h5>
       <input
         value={course.name}
@@ -37,39 +50,43 @@ function Dashboard(
         onChange={(e) => setCourse({ ...course, endDate: e.target.value })}
       />
 
-      <div className="list-group">
-        {courses.map((course) => (
+      <div className="wd-dashboard-grid d-flex flex-wrap flex-row ">
+        <div className="wd-card-dimensions row rows-col-4">
+        {courses.map((course, index) => (
           <Link
             key={course._id}
-            to={`/Kanbas/Courses/${course._id}`}
+            to={`/Kanbas/Courses/${course._id.$oid}`}
             className="list-group-item"
           >
-            <button class = "yellow-button"
-              onClick={(event) => {
-                event.preventDefault();
+            <div className="col">
+             <div className="card h-100">
+                  <h5 className="card-title">{course.name}</h5>
+                  <p className="card-text">{course.number}, {course.startDate} to {course.endDate}</p>
+                  <button className = "red-button"
+              onClick={(e) => {
+                e.preventDefault();
+                deleteCourse(course);
+              }}
+            >
+              Delete
+            </button>
+            <button className = "yellow-button"
+              onClick={(e) => {
+                e.preventDefault();
                 setCourse(course);
               }}
             >
               Edit
             </button>
-            <div class="divider"></div>
-            <button class="red-button"
-              onClick={(event) => {
-                event.preventDefault();
-                deleteCourse(course._id);
-              }}
-            >
-              Delete
-            </button>
-            <div class="divider"></div>
-
-            
-
-            {course.name}
+                </div>
+          </div>
           </Link>
+          
         ))}
       </div>
     </div>
+    </div>
   );
 }
+
 export default Dashboard;
